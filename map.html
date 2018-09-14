@@ -21,7 +21,7 @@
         }
     });
     var map = null, basePath = 'data/';
-    $.get(basePath + 'yunnan.html', function (mapdata) {
+    $.get(basePath + 'china.html', function (mapdata) {
         mapdata = JSON.parse(mapdata);
         var data = [];
         // 随机数据
@@ -73,7 +73,7 @@
                     },
                     drillup: function () {
                         map.setTitle({
-                            text: '云南省'
+                            text: '中国地图'
                         });
                     }
                 }
@@ -114,7 +114,7 @@
                 data: data,
                 mapData: mapdata,
                 joinBy: 'name',
-                name: '指标',
+                name: '中国地图',
                     states: {
                         hover: {
                             color: '#a4edba'
